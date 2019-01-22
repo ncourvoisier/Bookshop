@@ -1,0 +1,622 @@
+/*______________ DEBUT DE LA FEUILLE DE STYLES ___________________
+__________________________________________________________________
+			RE-INITIALISATION DES TAGS HTML
+	Pour éviter les valeurs par défaut différentes suivant les
+	navigateurs. Seuls les tags le plus	souvent utilisés et non
+	dépréciés sont pris en compte.
+	Reset complet : http://meyerweb.com/eric/tools/css/reset/
+__________________________________________________________________
+*/
+html, body, div, span, applet, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, img, strong, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+	}
+body {
+	line-height: 1;
+	}
+ol, ul {
+	list-style: none;
+	}
+/*
+__________________________________________________________________
+				FEUILLE DE STYLES ORIGINALE
+__________________________________________________________________
+*/
+body {
+	font: 13px/1.4 Verdana, Arial, Sans-Serif;
+  	color: #404040;
+	background: #9ac5e7 url(../images/fond.jpg) repeat;
+}
+#bcPage {
+	position: relative;
+	background-color: #FFFFFF;
+	border: 2px solid #000;
+	margin: 20px auto 20px auto;
+	width: 800px;
+	text-align: justify;
+}
+/*
+__________________________________________________________________
+					section "principale"
+__________________________________________________________________
+*/
+section {
+	min-height: 400px;
+}
+h1, h2, h3 {
+	font-weight: bold;
+	margin: 1em 0;
+}
+h1, h2 {
+	padding-left: 0.5em;
+}
+h1 {
+	font-size: 21px;
+}
+h2 {
+	font-size: 18px;
+	border-bottom: 2px solid #FF9B37;
+}
+h3 {
+	font-size: 15px;
+	margin-left: 1em;
+}
+p {
+	margin: 1em;
+}
+strong {
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+	color: #3c96f1;
+}
+a:hover {
+	text-decoration: underline;
+}
+.lienExterne:hover {
+	background: url(../images/lien_externe.gif) no-repeat right;
+	padding-right: 20px;
+}
+.clear {
+	clear: both;
+}
+.font6 {
+	font-size: 6px;
+}
+ul {
+	margin: 0em 1em 1em 3em;
+}
+li {
+	background: url(../images/puce.png) no-repeat;
+	padding-left: 16px;
+}
+#ulMenu {
+	margin: 0 0 2em 1em;
+	}
+#ulMenu ul {
+	margin: 0 1em 0 3em;
+	}
+#ulMenu li {
+	margin: 0.5em 0;
+}
+/*
+__________________________________________________________________
+		bloc de 6 images de la page présentation
+__________________________________________________________________
+*/
+#bcCompo {
+	position: relative;
+	height: 350px;
+}
+#bcCompo img{
+	position: absolute;
+}
+img[src*="lecteur"] {
+	width: 103px;
+	height: 128px;
+	top: 125px;
+	left: 350px;
+}
+img[src*="watchmen"] {
+	width: 130px;
+	height: 198px;
+	top: 20px;
+	left: 80px;
+}
+img[src*="PHP4dummies"] {
+	width: 120px;
+	height: 177px;
+	left: 560px;
+	top: 40px;
+}
+img[src*="H2G2"] {
+	width: 100px;
+	height: 165px;
+	left: 240px;
+	top: 120px;
+}
+img[src*="TWD"] {
+	width: 100px;
+	height: 154px;
+	top: 200px;
+	left: 430px;
+}
+img[src*="1984"] {
+	width: 100px;
+	height: 160px;
+	top: 0px;
+	left: 370px;
+}
+/*
+__________________________________________________________________
+ positionnement des 3 images flottantes de la page présentation
+__________________________________________________________________
+*/
+img[src*="paiement_securise"] {
+	float: right;
+	width: 112px;
+	height: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+img[src*="livraison"] {
+	width: 100px;
+	height: 86px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+img[src*="cadeau_souris"] {
+	float: right;
+	width: 140px;
+	height: 140px;
+	margin-top: 10px;
+	margin-right: -70px;
+	border: solid 2px #000;
+	margin-left: 10px;
+}
+/*
+__________________________________________________________________
+					enseigne
+__________________________________________________________________
+*/
+aside {
+	position: fixed;
+	margin-top: 10px;
+	margin-left: -202px;
+	height: 200px;
+	width: 200px;
+	background: url(../images/enseigne.png) no-repeat;
+}
+aside a {
+	width: 32px;
+	height: 32px;
+	float: left;
+}
+a[href*="facebook"] {
+	background: url(../images/rezosociaux.jpg) no-repeat 0px 0px;
+	margin-top: 80px;
+	margin-left: 52px;
+}
+a[href*="twitter"]  {
+	background: url(../images/rezosociaux.jpg) no-repeat -76px 0px;
+	margin-top: 80px;
+	margin-left: 5px;
+}
+a[href*="google"]  {
+	background: url(../images/rezosociaux.jpg) no-repeat -38px 0px;
+	margin-top: 5px;
+	margin-left: 52px;
+}
+a[href*="pinterest"]  {
+	background: url(../images/rezosociaux.jpg) no-repeat -113px 0px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+/*
+__________________________________________________________________
+					header
+__________________________________________________________________
+*/
+header {
+	position: relative;
+	background: url(../images/entete.jpg) no-repeat;
+	background-position: -50px;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+}
+header a {
+	position: absolute;
+}
+a[href*="index."] {
+	width: 422px;
+	height: 153px;
+	left: 20px;
+	top: 10px;
+	background: transparent url(../images/logo.png) no-repeat;
+}
+/* sous titre */
+header > img {
+	position: absolute;
+	width: 364px;
+	height: 50px;
+	bottom: 0px;
+	right: 0px;
+}
+nav:hover .lienMenu {
+	visibility: visible;
+}
+.lienMenu {
+	visibility: hidden;
+	height: 55px;
+	width: 55px;
+}
+a.lienMenu[href*="recherche.php"]  {
+	background: url(../images/icon-search.png) no-repeat;
+}
+a.lienMenu[href*="recherche.php"]:hover {
+	background: url(../images/icon-search-hover.png) no-repeat;
+}
+a.lienMenu[href*="panier.php"] {
+	background: url(../images/icon-cart.png) no-repeat;
+}
+a.lienMenu[href*="panier.php"]:hover {
+	background: url(../images/icon-cart-hover.png) no-repeat;
+}
+a.lienMenu[href*="liste.php"] {
+	background: url(../images/icon-list.png) no-repeat;
+}
+a.lienMenu[href*="liste.php"]:hover {
+	background: url(../images/icon-list-hover.png) no-repeat;
+}
+a.lienMenu[href*="compte.php"] {
+	background: url(../images/icon-account.png) no-repeat;
+}
+a.lienMenu[href*="compte.php"]:hover {
+	background: url(../images/icon-account-hover.png) no-repeat;
+}
+a.lienMenu[href*="deconnexion.php"] {
+	background: url(../images/icon-logout.png) no-repeat;
+}
+a.lienMenu[href*="deconnexion.php"]:hover {
+	background: url(../images/icon-logout-hover.png) no-repeat;
+}
+a.lienMenu[href*="login.php"] {
+	background: url(../images/icon-login.png) no-repeat;
+}
+a.lienMenu[href*="login.php"]:hover {
+	background: url(../images/icon-login-hover.png) no-repeat;
+}
+.position1 {
+	top: 130px;
+	left: 10px;
+}
+.position2 {
+	top: 140px;
+	left: 70px;
+}
+.position3 {
+	top: 130px;
+	left: 130px;
+}
+.position4 {
+	top: 135px;
+	left: 190px;
+}
+.position5 {
+	top: 135px;
+	left: 290px;
+}
+/*
+__________________________________________________________________
+					articles
+__________________________________________________________________
+*/
+.bcArticle {            /* utilisé dans index.php */
+	float: left;
+	width: 195px;
+	height: 250px;
+	text-align: center;
+	position: relative;
+}
+.bcArticle img {
+	height: 160px;
+	border: solid 1px #000;
+}
+.bcArticle:hover .addToCart, .bcArticle:hover .addToWishlist{
+	visibility: visible;
+}
+.addToCart {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+	right: 0px;
+	width: 40px;
+	height: 25px;
+	background: url(../images/btnAddToCart.png) no-repeat;
+}
+.addToWishlist {
+	position: absolute;
+	visibility: hidden;
+	top: 65px;
+	right: 0px;
+	width: 40px;
+	height: 40px;
+	background: url(../images/btnAddToWishlist.png) no-repeat;
+}
+.bcResultat, .liste {           /* utilisé dans recherche.php */
+	clear: both; 
+	position: relative;
+	margin: 30px 10px 0 10px;	
+	padding: 10px;
+	border: solid 2px transparent;
+}
+.bcResultat:hover,.liste:hover {
+	border-color: #00A000; 
+	background: #FFFFE0;
+}
+.bcResultat:hover .addToCart, .bcResultat:hover .addToWishlist, .liste:hover .addToCart{
+	visibility: visible;
+}
+.bcResultat img,.liste img{
+	float: left; 
+	margin: 0 10px 10px 0; 
+	border: solid 1px #000; 
+	height: 100px; 
+}
+.bcResultat .addToCart,.liste .addToCart, .bcResultat .addToWishlist{
+	right: 10px;
+}
+/*
+__________________________________________________________________
+					Formulaires
+__________________________________________________________________
+*/
+
+#bcInscription {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bcFormulaireBoite {
+	border: solid 2px #FF9B37;
+	border-radius: 10px;
+	width: 350px;
+	height: 150px;
+	padding: 0;	
+    position: relative;
+}
+.bcFormulaireBoite input[type=submit] {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: block;   
+    transform: translateX(-50%);
+}
+
+td:first-child {
+	text-align: right;	
+}
+
+/* la règle ci-dessous doit être placée après la précédente pour que 
+le bouton de soumission du formulaire d'inscription soit bien placé */
+form .centered {
+    text-align: center;
+}
+
+form table{
+    margin: 0 auto;
+}
+
+td {
+	padding: 2px 3px;
+}
+
+.enteteBloc {
+	background-color: #FF9B37;
+	color: #FFF;	
+	padding: 6px 4px;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 5px 5px 0 0;
+}
+
+.erreur {
+	border: solid 2px #A00000;
+	color: #A00000;
+	/* text-align: center; */
+	font-weight: bold;	
+	padding: 5px;
+	margin: 10px 20px;
+}
+
+input[type=submit] {
+	background: transparent url(../images/bouton.png) no-repeat;
+	height: 26px;
+	width: 102px;
+	text-align: center;
+	color: #FFF;
+	border: none;	
+	font-weight: bold;
+	cursor: pointer;
+}
+.details{
+	clear: both; 
+	position: relative;
+	height: 600px;
+}
+.details img{
+	float:left;
+	border: solid 1px #000;
+}
+.details:hover .addToCart, .details:hover .addToWishlist{
+	visibility: visible;
+}
+.details .addToCart,.details .addToWishlist{
+	right: 10px;
+}
+.delete{
+	float:right;
+}
+.delete:hover{
+	color: #F00;
+}
+
+/*
+__________________________________________________________________
+					mon compte
+__________________________________________________________________
+*/
+#contenu_infos{
+	text-align: center;
+	border: solid 2px #FF9B37;
+}
+
+/*
+__________________________________________________________________
+					listes des commandes
+__________________________________________________________________
+*/
+
+.bcCommande {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: 1px solid #61A6F0;
+}
+.bcCommandeAligne img {
+	border: 1px solid black;
+}
+.bcCommandeAligne{
+	margin-left: 30px;
+}
+.bcCommandeStyle{
+	margin-top: -60px;
+	margin-left: 150px;
+}
+.bcCommandeAuteur {
+	margin-bottom: -40px;
+	margin-left: 180px;
+}
+.bcCommandeTxt {
+	margin-left: 10px;
+}
+
+/*
+__________________________________________________________________
+					articles
+__________________________________________________________________
+*/
+.bcArticle:hover{
+	background-color: #EEF6FF;
+}
+.bcArticle img{
+	width: 100px;
+	margin-top: 10px;
+}
+
+/*
+__________________________________________________________________
+					index
+__________________________________________________________________
+*/
+#contenu_infos{
+	background-color: #EEF6FF;
+}
+
+/*
+__________________________________________________________________
+					panier
+__________________________________________________________________
+*/
+.bcPanierAligne img {
+	position:relative;	
+	left:275px;
+	margin-top: 10px;
+	margin-left: 75px;
+	border: 1px solid black;
+}
+.bcPanierAligne p{
+	text-align: center;
+}
+.supprimer_panier {
+	float:right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.boutonSubmit {
+	padding-top: 10px;
+	text-align: center;
+}
+h4 {
+	margin: 1em;
+}
+
+/*
+__________________________________________________________________
+					liste
+__________________________________________________________________
+*/
+#vider_liste, #retour, #vider_panier{
+	padding:2px;
+	float:right;
+	margin-right:10px;
+	background-color:#FF4500;
+	color:white;
+}
+.bcPanierAligne{
+	border: solid 2px #61A6F0;
+	background-color:#C1DFFE;
+}
+.bcPanierAligne:hover {
+	background-color: #61A6F0;
+}
+.supprimer_panier{
+	color:red;
+}
+
+/*
+__________________________________________________________________
+					détails
+__________________________________________________________________
+*/
+.details img{
+	margin-right: 5px;
+}
+.details strong{
+	color:blue;
+}
+.details {
+	border: solid 2px #FF4500;
+	padding-right:4px;
+	margin:4px;
+}
+
+/*
+__________________________________________________________________
+					footer
+__________________________________________________________________
+*/
+footer {
+	clear: both;
+	margin: 2em 0 0 0;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 10px;
+}
+/*______________ FIN DE LA FEUILLE DE STYLES ______________________*/
+
